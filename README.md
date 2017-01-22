@@ -3,7 +3,7 @@ Gets an array of images from the Google image search. No API is used, just parsi
 
 ##Image attributes
 ``` javascript
-url         //Original image url
+url         //Image url
 h           //Height
 w           //With
 origin      //Url to the website
@@ -12,14 +12,15 @@ src         //Src of the image. Usually base64 encoded
 
 ##Usage
 ``` javascript
-var ImagSearch = require("./ImageSearch.js"); 
+var ImagSearch = require("./ImageSearch.js"); //Include it
 
 var search = new ImagSearch();
 
+//Uses "hallo" as the search query
 search.getImages("hallo", function(imgs)
 {
-    for(let i in imgs)
-        console.log(imgs[i].url);
+    for(let i in imgs) //Iterates the images
+        console.log(imgs[i].url); //Prints the urls
 });
 
 ```
@@ -36,7 +37,7 @@ https://cache.willhaben.at/mmo/0/189/978/900_147401231.jpg
 
 ##Setup
 Install the following dependecies
-``` javascript
+```
 npm install phantomjs@1.9.20 -g //Revenant is broken with the latest phantomjs
 npm install revenant
 npm install url
