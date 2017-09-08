@@ -1,7 +1,7 @@
-#Google image search for NodeJS
+# Google image search for NodeJS
 Gets an array of images from the Google image search. No API is used, just parsing the web.
 
-##Image attributes
+## Image attributes
 ``` javascript
 url         //Image url
 h           //Height
@@ -10,7 +10,7 @@ origin      //Url to the website
 src         //Src of the image. Usually base64 encoded
 ```
 
-##Usage
+## Usage
 ``` javascript
 var ImagSearch = require("./ImageSearch.js"); //Include it
 
@@ -35,7 +35,7 @@ https://cache.willhaben.at/mmo/0/189/978/900_147401231.jpg
 ...
 ```
 
-##Setup
+## Setup
 Install the following dependecies
 ``` javascript
 npm install phantomjs@1.9.20 -g //Revenant is broken with the latest phantomjs
